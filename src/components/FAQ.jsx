@@ -159,10 +159,10 @@ export default function FAQ() {
               <p className="text-lg text-gray-600">
                 Contactează-ne la{' '}
                 <a 
-                  href="tel:0722222222" 
+                  href="tel:+40 727 524 831" 
                   className="text-teal-600 font-bold hover:text-teal-700 transition-colors"
                 >
-                  0722 222 222
+                  +40 727 524 831
                 </a>
                 {' '}sau vizitează pagina noastră de{' '}
                 <a 

@@ -42,21 +42,21 @@ export default function ServicesSlider() {
   ]
 
   return (
-    <section className="pt-12 lg:pt-24">
+    <section className="pt-12 lg:pt-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex mb-4 items-center">
-          <div className="w-2 h-2 rounded-full bg-teal-400"></div>
-          <span className="inline-block ml-2 text-sm font-medium text-teal-300">
+          <div className="w-2 h-2 rounded-full bg-teal-600"></div>
+          <span className="inline-block ml-2 text-sm font-medium text-teal-600">
             Serviciile Populare
           </span>
         </div>
-        <div className="border-t border-gray-700 pt-16">
+        <div className="border-t border-gray-200 pt-6">
           <div>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl mb-6 text-white font-bold">
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl mb-6 text-gray-900 font-bold">
               Soluții Complete pentru {' '}
-              <span className="text-teal-400">Acoperișul Tău</span>
+              <span className="text-teal-600">Acoperișul Tău</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl">
+            <p className="text-xl text-gray-600 max-w-2xl">
               Oferim servicii profesionale pentru orice tip de acoperiș, 
               cu focus pe calitate și durabilitate.
             </p>
@@ -64,8 +64,8 @@ export default function ServicesSlider() {
         </div>
       </div>
 
-      <div className="px-4 pb-4 mt-12 md:mt-24">
-        <div className={`py-12 md:py-16 ${services[activeSlide-1].bgColor} rounded-3xl transition-colors duration-500 shadow-lg`}>
+      <div className="px-4 pb-4 mt-6 md:mt-24">
+        <div className={`py-8 md:py-8 ${services[activeSlide-1].bgColor} rounded-3xl transition-colors duration-500 shadow-lg`}>
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
               {/* Text Content */}

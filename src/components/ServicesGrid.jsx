@@ -77,21 +77,21 @@ const services = [
     title: "Montaj Acoperișuri",
     description: "Servicii profesionale de montaj acoperișuri noi, cu materiale premium și tehnologii moderne. Oferim soluții complete, de la structură până la învelitoare.",
     icon: HomeIcon,
-    link: "/servicii/montaj-acoperisuri"
+    link: "/servicii/montaj-acoperis"
   },
   {
     id: 2,
     title: "Reparații și Întreținere",
     description: "Reparăm și întreținem orice tip de acoperiș, de la infiltrații și țigle deteriorate până la probleme structurale complexe. Intervenim rapid pentru a preveni pagubele.",
     icon: WrenchIcon,
-    link: "/servicii/reparatii-acoperisuri"
+    link: "/servicii/reparatii-acoperis"
   },
   {
     id: 3,
     title: "Izolații Termice",
     description: "Izolăm profesional acoperișul casei dumneavoastră, reducând costurile de încălzire și răcire. Folosim materiale de înaltă calitate pentru eficiență maximă.",
     icon: ShieldCheckIcon,
-    link: "/servicii/izolatie-acoperis"
+    link: "/servicii/hidroizolatii"
   },
   {
     id: 4,
@@ -107,7 +107,7 @@ export default function ServicesGrid() {
     <section className="relative pt-20 pb-24 lg:pt-32 lg:pb-40 bg-gradient-to-b from-gray-900 to-gray-800 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[url('/images/pattern.png')] bg-repeat opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('/images/pattern.svg')] bg-repeat opacity-30"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

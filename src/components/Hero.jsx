@@ -16,12 +16,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-teal-900/30 via-transparent to-transparent"></div>
         <div className="absolute inset-0 backdrop-blur-[100px]"></div>
         {/* Opțional: adaugă un overlay cu noise pentru textură */}
-        <div className="absolute inset-0 opacity-50 mix-blend-overlay"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-            backgroundSize: '100px 100px'
-          }}
-        ></div>
+
       </div>
 
       {/* Opțional: adaugă un efect de "glow" în colțuri */}
@@ -103,7 +98,7 @@ export default function Hero() {
               {/* Main Image */}
               <div className="relative w-full h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/hero-image.webp"
+                  src="/images/pattern.svg"
                   alt="Servicii profesionale de montaj și reparații acoperișuri"
                   fill
                   className="object-cover"

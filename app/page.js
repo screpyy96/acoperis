@@ -6,7 +6,7 @@ import Testimonials from '../src/components/Testimonials'
 import FAQ from '../src/components/FAQ'
 
 export const metadata = {
-  title: 'Servicii Profesionale de Acoperiș în România | Nume Companie',
+  title: 'Servicii Reparatii si Montaj Acoperisuri',
   description: 'Oferim servicii complete de acoperiș în toată România. Expertiză în montaj, reparații și întreținere acoperișuri. Calitate garantată și prețuri competitive.',
   keywords: 'acoperis, servicii acoperis, reparatii acoperis, montaj acoperis, acoperisuri romania',
 }

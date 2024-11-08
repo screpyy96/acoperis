@@ -68,7 +68,7 @@ export default function Navbar() {
 
   const navigation = [
     { name: 'Acasă', href: '/' },
-    { name: 'Despre Noi', href: '/despre' },
+    { name: 'Despre Noi', href: '/despre-noi' },
     { name: 'Servicii', href: '/servicii' },
     { name: 'Portofoliu', href: '/portofoliu' },
     { name: 'Contact', href: '/contact' },
@@ -100,18 +100,26 @@ export default function Navbar() {
         scrolled ? 'bg-teal-900 shadow-lg' : 'bg-teal-900/95'
       } transition-all duration-300`}>
         <nav className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16 lg:h-20">
-            {/* Logo */}
-            <Link href="/" className="relative z-10">
-              <Image 
-                src="/logo.svg" 
-                alt="Logo" 
-                width={80}
-                height={80}
-                className="h-12 w-auto lg:h-14"
-                priority
+          <div className={`flex items-center justify-between ${mobileNavOpen ? 'h-16' : 'h-20'} transition-all duration-300`}>
+            {/* Logo - făcut puțin mai mic când meniul e deschis */}
+            <Link href="/" className="flex-shrink-0">
+              <Image
+                src="/logo.svg"
+                alt="AcoperisuriPro Logo"
+                width={150}
+                height={40}
+                className={`w-auto ${mobileNavOpen ? 'h-8' : 'h-10'} transition-all duration-300`}
               />
             </Link>
+
+            {/* Text lângă logo - ajustat și el */}
+            <div className="text-center mx-2">
+              <span className={`text-sm font-bold text-white transition-all duration-300 ${
+                mobileNavOpen ? 'text-xs' : 'text-sm'
+              }`}>
+                Acoperiș de la A la Z
+              </span>
+            </div>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
@@ -126,7 +134,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link 
-                href="/contact"
+                href="/solicita-oferta"
                 className="inline-flex px-4 py-2 text-sm font-medium text-white border-2 border-lime-500 hover:bg-lime-500 rounded-full transition-all duration-300"
               >
                 Solicită Ofertă
@@ -154,7 +162,7 @@ export default function Navbar() {
             mobileNavOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <div className="flex flex-col h-full pt-24 px-4 pb-6">
+          <div className="flex flex-col h-full pt-20 px-4 pb-6">
             <div className="flex-1">
               {navigation.map((item) => (
                 <Link

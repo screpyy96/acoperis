@@ -2,10 +2,10 @@
 import "./globals.css";
 import Navbar from "../src/components/Navbar";
 import WhatsAppButton from "../src/components/WhatsAppButton";
-
+import Footer from "../src/components/Footer";
 
 export const metadata = {
-  title: "AcoperișuriPro",
+  title: "Acoperiș de la A la Z",
   description: "Oferim servicii complete de acoperiș în toată România. Expertiză în montaj, reparații și întreținere acoperișuri. Calitate garantată și prețuri competitive.",
 };
 
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <WhatsAppButton />
+        <Footer />
       </body>
     </html>
   );

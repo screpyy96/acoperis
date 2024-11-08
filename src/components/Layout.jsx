@@ -8,16 +8,9 @@ export default function Layout({ children }) {
       <header className="bg-teal-600 text-white py-4 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <h1 className="text-2xl font-bold">
-            <Link href="/">Servicii Acoperiș</Link>
+            <Link href="/servicii">Servicii Acoperiș</Link>
           </h1>
-          <nav>
-            <Link href="/servicii" className="ml-4 hover:underline">
-              Servicii
-            </Link>
-            <Link href="/orase" className="ml-4 hover:underline">
-              Orașe
-            </Link>
-          </nav>
+          
         </div>
       </header>
 
@@ -27,11 +20,7 @@ export default function Layout({ children }) {
         </div>
       </main>
 
-      <footer className="bg-teal-600 text-white py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2023 Servicii Acoperiș. Toate drepturile rezervate.</p>
-        </div>
-      </footer>
+     
     </div>
   )
 }
