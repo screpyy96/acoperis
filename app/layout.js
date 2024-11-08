@@ -1,12 +1,24 @@
-
 import "./globals.css";
 import Navbar from "../src/components/Navbar";
 import WhatsAppButton from "../src/components/WhatsAppButton";
 import Footer from "../src/components/Footer";
 
 export const metadata = {
-  title: "Acoperiș de la A la Z",
-  description: "Oferim servicii complete de acoperiș în toată România. Expertiză în montaj, reparații și întreținere acoperișuri. Calitate garantată și prețuri competitive.",
+  metadataBase: new URL('https://acoperis.vercel.app'),
+  title: {
+    default: 'Reparatii Acoperisuri - Experți în Acoperișuri',
+    template: '%s | Reparatii Acoperisuri'
+  },
+  description: 'Servicii profesionale de montaj și reparații acoperișuri. Expertiză, calitate și garanție pentru acoperișul casei tale.',
+  keywords: ['acoperis', 'montaj acoperis', 'reparatii acoperis', 'mansardari', 'sisteme pluviale'],
+  authors: [{ name: 'Reparatii Acoperisuri' }],
+  creator: 'Reparatii Acoperisuri',
+  publisher: 'Reparatii Acoperisuri',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 };
 
 export default function RootLayout({ children }) {

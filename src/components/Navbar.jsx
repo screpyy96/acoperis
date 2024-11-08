@@ -75,7 +75,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="relative z-50">
+    <header className="fixed w-full z-50">
       {/* Top Info Bar - Vizibil doar pe desktop */}
       <div className="bg-teal-950 text-white py-2 hidden lg:block">
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -96,7 +96,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Navbar */}
-      <div className={`sticky top-0 w-full ${
+      <div className={`w-full ${
         scrolled ? 'bg-teal-900 shadow-lg' : 'bg-teal-900/95'
       } transition-all duration-300`}>
         <nav className="container mx-auto px-4">
@@ -113,7 +113,7 @@ export default function Navbar() {
             </Link>
 
             {/* Text lângă logo - ajustat și el */}
-            <div className="text-center mx-2">
+            <div className="text-center mx-2 lg:hidden">
               <span className={`text-sm font-bold text-white transition-all duration-300 ${
                 mobileNavOpen ? 'text-xs' : 'text-sm'
               }`}>
